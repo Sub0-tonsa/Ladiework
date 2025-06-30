@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.min.js"></script>
+
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fixed.css">
+
+    <%- include("../partial/" + pagina) %>
+
+    <% if (dadosNotificacao) { %>
+        <script>
+            new Notify({
+                status: '<%= dadosNotificacao.tipo %>', // Utiliza o tipo de notificação (success ou error)
+                title: '<%= dadosNotificacao.titulo %>',
+                text: '<%=dadosNotificacao.mensagem%>',
+                effect: 'slide',
+                speed: 200,
+                customClass: '',
+                customIcon: '',
+                showIcon: true,
+                showCloseButton: true,
+                autoclose: true,
+                autotimeout: 3000,
+                notificationsGap: 20,
+                notificationsPadding: null,
+                type: 'outline',
+                position: 'right top',
+                customWrapper: '',
+            });
+        </script>
+    <% } %>
+    
+
+                <footer>
+                    <img src="images/logo-branca.svg" alt="LadieWork">
+
+                    <ul>
+                        <% if (logado) { %>
+                            <a href="/criar">
+                                <li>Ensinar na Ladiework</li>
+                            </a>
+                            <% } else { %>
+
+                                <% } %>
+                                    <a href="/mentorias">
+                                        <li>Mentorias</li>
+                                    </a>
+                                    <a href="/cursos">
+                                        <li>Cursos</li>
+                                    </a>
+                                    <a href="/quemsomos">
+                                        <li>Quem Somos</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Fale Conosco</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Ajuda e Suporte</li>
+                                    </a>
+                                    <a href="/termosecondicoes">
+                                        <li>Termos</li>
+                                    </a>
+                                    <a href="/privacidade">
+                                        <li>Política de Privacidade</li>
+                                    </a>
+                                    <a href="mapadosite">
+                                        <li>Mapa do Site</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Configurações</li>
+                                    </a>
+
+                    </ul>
+
+                    <div class="container">
+                        <section class="socials">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </section>
+                        <button class="contato">Contato</button>
+                    </div>
+
+                    <span>© 2024 - LadieWork</span>
+                </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+                <script src="js/menu-mobile.js"></script>
+                <script src="js/cursos.js"></script>
+                </body>
+
+</html>

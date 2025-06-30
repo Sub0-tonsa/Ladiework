@@ -1,0 +1,73 @@
+<title>Carrinho</title>
+
+<link rel="stylesheet" href="css/carrinho.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <%- include("../partial/header") %>
+    <main>
+            <h1>Meu carrinho</h1>
+         
+            <section class="main-section">
+                <ul class="purchased-courses" id="courses-list">
+                    <li class="empty-cart">
+                        <h2>Seu carrinho está vazio!</h2>
+                        <p>Adicione cursos ou mentoria ao seu carrinho para começar sua jornada de aprendizado.</p>
+                    </li>
+                </ul>
+                
+                <aside>
+                    <h2>Total:</h2>
+                    <p>R$ 0</p>
+                    <br>
+                    <!-- <span class="discont">4x R$ 25</span> -->
+                    <% if (logado) { %>
+                    <button disabled onclick="window.location.href = 'finalizarcompra'">Finalizar compra</button>
+                    <% } else { %>
+                        <button disabled onclick="window.location.href = 'login'">Finalizar compra</button>
+                        <% } %>
+                 
+                </aside>
+            </section>
+
+
+            <hr>
+        <h3>Mais cursos para você</h3>
+        <aside class="more-curses">
+
+
+            <article>
+                <img src="images/image1.jpg" alt="">
+                <div class="more-curses-info">
+                    <h4>Fundamentos do Empreendedorismo</h4>
+                    <p>Descubra as bases essenciais para iniciar um negócio e dominar técnicas de marketing.</p>
+                </div>
+            </article>
+            
+            <article>
+                <img src="images/image2.jpg" alt="">
+                <div class="more-curses-info">
+                    <h4>Estrategizando sua Empresa</h4>
+                    <p>Explore as estratégias de gestão e marketing para impulsionar o sucesso do seu empreendimento.</p>
+                </div>
+            </article>
+            
+            <article>
+                <img src="images/image3.jpg" alt="">
+                <div class="more-curses-info">
+                    <h4>Construindo Marcas de Sucesso</h4>
+                    <p>Aprenda a criar uma identidade forte e a aplicar táticas avançadas de marketing eficaz.</p>
+                </div>
+            </article>
+            
+        </aside>
+
+
+        </main>
+
+        
+
+        <script src="js/carrinho.js"></script>

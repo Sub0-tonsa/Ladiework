@@ -1,0 +1,246 @@
+main {
+    width: 90%;
+    margin: 40px auto;
+
+    background: rgb(247, 247, 247) url("../images/fundomentoria.svg") no-repeat center center/cover;
+    
+}
+
+.avaliation {
+    cursor: not-allowed  !important;
+    background-color: rgba(128, 128, 128, 0.505) !important;
+}
+
+h1 {
+ 
+    border-bottom: 1px solid var(--title-bold);
+    font-size: 1.8rem;
+    padding: 0 10px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+input[type=search] {
+    height: 30px;
+    border: none;
+    width: 380px;
+    background-color: var(--pop-up-color);
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+}
+
+input[type=search]:focus {
+    background-color: var(--pop-up-color);
+    border: none;
+}
+
+.filter-image {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    user-select: none;
+}
+
+input[type=search]::placeholder {
+    color: var(--cta-titles);
+}
+
+.top-information {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.top-information>div {
+    position: relative;
+}
+
+h2 {
+    color: var(--cta-titles);
+    opacity: 0.8;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+main > section {
+    background-color: var(--pop-up-color);
+    display: flex;
+    gap: 20px;
+    padding: 10px 28px;
+    
+}
+
+.mentoring-card {
+    height: 410px;
+    width: 246px;
+    background-color: white;
+}
+
+.mentoring-card img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+
+.mentoring-card .info-mentoring {
+    margin: 0px 10px 10px 10px
+}
+
+.mentoring-card h3 {
+ font-size: 1rem;
+ font-weight: 500;
+ color: var(--second-font);
+
+}
+
+.mentoring-card .stars {
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    color: var(--cta);
+}
+
+.mentoring-card span {
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+.mentoring-card p {
+    font-size: 0.788rem;
+    opacity: 0.8;
+    margin: 10px 0;
+ height: 115px;
+ overflow-wrap: break-word;
+}
+
+
+.more {
+    height: 137px !important;
+}
+
+.mentoring-card button {
+    width: 100%;
+    font-size: 0.9rem;
+    background-color: var(--cta);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+  
+   
+}
+
+.mentoring-card button:hover {
+   background-color: var(--cta-hover);
+   
+}
+
+
+
+
+/* INFO MENTORIA */
+
+.mentoring-info {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 4;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 380px;
+    height: 250px;
+    cursor: default;
+
+
+    border-radius: 5px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.mentoring-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+
+.mentoring-info p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--second-font);
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+}
+
+.mentoring-info span:nth-of-type(1) {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.mentoring-info hr {
+    margin-top: 10px;
+    border: none;
+    background-color: grey;
+    height: 1px;
+}
+
+
+.additional-information {
+    margin: 10px 0;
+    text-align: right;
+
+}
+
+.triangle {
+    height: 10px;
+    width: 10px;
+    border-left: 15px solid transparent;
+    /* Largura do triângulo */
+    border-right: 15px solid transparent;
+    /* Largura do triângulo */
+    border-bottom: 20px solid white;
+    /* Altura do triângulo e cor de fundo */
+    margin-top: -26px;
+    margin-left: 60px;
+}
+
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    input[type=search] {
+        height: 25px;
+        width: 200px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin: 10px 8px;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+   main section {
+    flex-direction: column;
+    align-items: center;
+   }
+
+ 
+
+
+}

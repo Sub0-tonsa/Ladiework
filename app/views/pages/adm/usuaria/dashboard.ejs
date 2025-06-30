@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Página de Administração - LadieWork </title>
+
+  <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+
+  <div id="content">
+
+    <header>
+      <div class="busca">
+        <form action="">
+          <input type="text" placeholder="Pesquisar" class="search" id="search-input" />
+          <button type="submit" title="Buscar">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </form>
+        <button title="Notificações"><ion-icon name="notifications-outline"></ion-icon></button>
+        <div class="perfil">
+          <img src="<%= logado.foto || 'images/profilephoto.svg' %>" alt="Sua foto de perfil" />
+          <p>
+            <%= logado.nome %>
+          </p>
+        </div>
+      </div>
+      <div class="saudacao">
+        <div class="perfil">
+          <img src="<%= logado.foto || 'images/profilephoto.svg' %>" alt="Sua foto de perfil" />
+          <span>Olá,</span>
+          <p>
+            <%= logado.nome %>
+          </p>
+        </div>
+        <div class="acoes">
+          <button>Criar Curso</button>
+          <!-- <button>Enviar</button> -->
+          <button>Compartilhar Mentoria</button>
+        </div>
+      </div>
+    </header>
+
+    <aside>
+      <div class="logo">
+        <img src="images/logo-branca.svg" alt="Logotipo ladiework branca">
+      </div>
+      <ul class="menu">
+        <li class="selecionado">
+          <a href="#" id="inicio"><ion-icon name="home-outline"></ion-icon></i>Início</a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="person-outline"></ion-icon>Perfil</a>
+        </li>
+        <li>
+          <a href="/chat"><ion-icon name="chatbubble-outline"></ion-icon>Mensagens</a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="time-outline"></ion-icon>Histórico</a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="people-outline"></ion-icon>Mentoradas</a>
+        </li>
+        <li>
+          <a href="#" id="mentorias"><ion-icon name="people-circle-outline"></ion-icon>Mentorias</a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="calendar-clear-outline"></ion-icon>Calendário</a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="cellular-outline"></ion-icon>Dashboard</a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="#"><ion-icon name="build-outline"></ion-icon>Ajustes</a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="information-circle-outline"></ion-icon>Ajuda</a>
+        </li>
+        <li>
+          <a href="mentorias"><ion-icon name="caret-back-outline"></ion-icon>Voltar</a>
+        </li>
+      </ul>
+      <footer>
+        <p id="texto-footer">LadieWork, 2024</p>
+        <div class="links">
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram"><ion-icon
+              name="logo-instagram"></ion-icon></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Email"><ion-icon
+              name="mail-outline"></ion-icon></a>
+        </div>
+      </footer>
+    </aside>
+
+     <%- include("../../../partial/"+ pagina) %>
+
+      <% if (logado && dadosNotificacao) { %>
+        <script>
+          function notify(titulo, texto, tipo, posicao, duracao = 3000) {
+            new Notify({
+              status: tipo,
+              title: titulo,
+              text: texto.replace(/&lt;/g, "<").replace(/&gt;/g, ">"),
+              effect: 'fade',
+              speed: 500,
+              showIcon: true,
+              showCloseButton: true,
+              autoclose: true,
+              autotimeout: duracao,
+              gap: 20,
+              distance: 20,
+              type: 1,
+              position: posicao
+            })
+          }
+
+          notify(
+            "Mentoria!",
+            "<%= dadosNotificacao.mensagem %>",
+            "<%= dadosNotificacao.tipo %>",
+            "center"
+          );
+        </script>
+        <% } %>
+
+
+  <script>
+    const footer = document.getElementById("texto-footer");
+    footer.innerText = `LadieWork, ${new Date().getFullYear()}`;
+  </script>
+
+  <script src="../../js/dashboard.js"></script>
+
+
+</body>
+
+</html>

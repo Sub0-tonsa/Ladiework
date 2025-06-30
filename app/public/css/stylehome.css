@@ -1,0 +1,471 @@
+/* Estilos gerais */
+
+
+main {
+    background: rgb(247, 247, 247) url("../images/fundohome.svg") no-repeat center center/cover;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+
+}
+main section {
+    margin: auto;
+    max-width: 73%;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.abovethefold {
+    padding: 30px 0;
+    display: flex;
+    border-bottom: 2px solid #c5b8d9;
+    gap: 60px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.abovethefold img {
+    width: 38%;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+    object-fit: contain;
+}
+
+
+
+.smilewomen2,
+.smilewomen3 {
+    width: 32%;
+    object-fit: contain;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 390px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+
+.desc h1 {
+    display: inline;
+    text-align: left;
+    font-size: 2.3rem;
+    color: var(--cta-titles);
+    font-weight: 500;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.desc h3 {
+    font-size: 1.2rem;
+    color: var(--cta-titles);
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.desc p {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 35px;
+    color: var(--paragraphs);
+    margin-bottom: 30px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.seethecurses {
+    background-color: var(--third-color);
+    padding: 20px 20px 70px 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 30px 30px 30px 0;
+    margin: 40px 0;
+    position: relative;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+section.desc h2{
+   font-weight: 600;
+   color: var(--cta-titles);
+   text-transform: uppercase;
+   font-size: 1.2rem;
+}
+
+.seethecurses>button {
+    position: absolute;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+    font-weight: 600;
+}
+
+.photo div {
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.sobrementoria {
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.mentoriaresumo h2 {
+    color: var(--cta-titles);
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.mentoriaresumo p {
+    color: var(--paragraphs);
+    font-size: 1.1rem;
+    line-height: 35px;
+    
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.sobrementoria img {
+    max-width: 350px;
+    width: 400px;
+    object-fit: contain;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.mentoriaresumo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.seethecurses>section {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.seethecurses>section>img {
+    position: absolute;
+    width: 140px;
+    z-index: 4;
+    bottom: 10%;
+    left: 40%;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease, transform 0.6s ease;
+}
+
+.seethecurses>section>img:hover {
+    transform: translateY(-10%);
+}
+
+.seethecurses figcaption {
+    color: var(--font-color);
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+   
+}
+
+.cursoshome {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 74px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.cursoshome button,
+button a {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--cta);
+    padding: 5px 29px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    opacity: 1;
+    margin: 0 auto;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.cursoshome button:hover {
+    background-color: var(--cta-hover);
+}
+
+aside {
+    gap: 40px;
+    padding: 50px 150px;
+    font-weight: 600;
+    font-size: 1.35rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #c5b8d9;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.onu {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2.3em;
+    margin-bottom: 20px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.onu img {
+    width: 12%;
+    margin: 10px;
+    border-radius: 5px;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.onu .onu-mini {
+    width: 15%;
+    margin-bottom: 40px;
+    left: 20%;
+    transition: font-size 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.onu p:nth-of-type(2) {
+    color: var(--paragraphs2);
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+aside>span {
+    margin: auto;
+}
+
+aside a {
+    color: var(--second-font);
+}
+
+aside a:hover {
+    text-decoration: underline;
+   color: var(--second-font-hover);  
+}
+
+#scrollToTopBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 5;
+    position: fixed;
+    bottom: 20px;
+    right: -60px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: right 0.2s ease;
+}
+
+#scrollToTopBtn.show {
+    right: 20px;
+    transition: right 0.2s ease;
+}
+
+.first-course {
+    background-color: var(--second-color);
+    font-size: 1.2rem;
+    color: white;
+    height: 70px;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px 10px 0 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+   
+    
+}
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    /* main {
+        background: rgb(247, 247, 247) url(https://i.ibb.co/gwnksyN/Home.png) no-repeat center center/cover;
+    
+    } */
+
+    .first-course {
+        font-size: 0.9rem;
+        justify-content: center;
+        height: 30px;
+        width: 290px;
+        font-weight: 600;
+    }
+
+    section {
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .sobrementoria {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .sobrementoria>img {
+        max-width: 100%;
+        width: 70%;
+        margin: auto;
+    }
+
+    .mentoriaresumo {
+        width: 100%;
+    }
+
+    .mentoriaresumo h2 {
+        width: 100%;
+        color: var(--font-color);
+        font-size: 1.5rem;
+    }
+
+    .abovethefold {
+        flex-direction: column;
+    }
+
+    .mentoriaresumo p {
+        opacity: 0.72;
+        font-size: 1rem;
+    }
+
+    main {
+        padding-top: 30px;
+    }
+
+    .abovethefold img,
+    .cursoshome img {
+        max-width: 100%;
+        width: 80%;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    .abovethefold p,
+    .cursoshome p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .abovethefold h2,
+    .cursoshome h2 {
+        font-size: 1rem;
+    }
+
+    .desc {
+        gap: 8px;
+    }
+
+    .cursoshome {
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cursoshome img {
+        max-width: 250px;
+        width: 70%;
+    }
+
+    aside {
+        align-items: center;
+        font-size: 1rem;
+        padding: 1.8rem 1.2rem;
+    }
+
+    aside>span {
+        margin: 0;
+        text-align: center;
+    }
+
+    .onu img,
+    .onu img.onu-mini {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/* DESKTOP */
+@media (min-width: 1720px) and (max-width: 2000px) {
+
+    section {
+        max-width: 70%;
+    }
+
+    .desc h2 {
+        font-size: 1.6rem;
+    }
+
+    .desc p {
+        font-size: 1.4rem;
+    }
+
+    .seethecurses {
+        margin: 5% auto;
+    }
+
+    .cursoshome {
+        margin-top: 10%;
+    }
+
+    .cursoshome button,
+    button a {
+        font-size: 1.2rem;
+    }
+
+    aside {
+        padding: 30px 100px;
+    }
+
+    .onu {
+        font-size: 1.8rem;
+    }
+
+    .sobrementoria {
+        margin: 70px 0;
+        justify-content: space-around;
+    }
+
+    .mentoriaresumo {
+        margin: 0;
+        width: 40%;
+    }
+
+    .sobrementoria img {
+        max-width: 382px;
+        width: 382px;
+    }
+}

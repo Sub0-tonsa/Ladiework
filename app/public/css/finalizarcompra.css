@@ -1,0 +1,399 @@
+h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-left: 70px;
+    color: var(--font-color);
+    margin-bottom: 10px;
+}
+
+
+main {
+    display: flex;
+    gap: 15px;
+    width: 89%;
+    margin: auto;
+    height: 100%;
+    justify-content: space-between;
+}
+
+section {
+    width: 700px;
+    margin-top: 30px;
+}
+
+section h2 {
+    margin-left: 30px;
+    font-size: 1.3rem;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+.choose-img {
+    width: 20px;
+}
+
+aside {
+    width: 340px;
+
+
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+aside span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
+    line-height: 25px;
+}
+
+aside hr {
+    width: 90%;
+    margin: 10px 0;
+}
+
+aside span:nth-of-type(1) {
+    margin-right: 45%;
+
+}
+
+aside span:nth-of-type(3) {
+    margin-right: 52%;
+}
+
+.total {
+    font-weight: 600;
+    font-size: 1.2rem;
+    opacity: 1;
+    margin-right: 61%;
+}
+
+.service-terms {
+    margin-top: 6px;
+    display: block;
+    width: 300px;
+    line-height: 13px;
+    font-size: 0.7rem;
+}
+
+.card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.card h3 {
+    opacity: 0.7;
+    font-size: 1rem;
+
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card li {
+    list-style: none;
+    margin: 10px 0;
+    height: 30px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card h3>span {
+    font-size: 0.8rem;
+    opacity: 0, 7;
+
+    font-weight: 500;
+}
+
+.card li span {
+    opacity: 0.7;
+    align-self: flex-end;
+    margin-left: 10px;
+
+}
+
+.card li ion-icon {
+    margin-right: 15px;
+}
+
+
+.card li:hover {
+    background-color: #e9e9e9;
+
+}
+
+.card a {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+
+.card-info {
+    display: none;
+    padding: 10px;
+}
+
+aside button {
+    margin-top: 30px;
+    width: 90%;
+    border: none;
+    background-color: var(--cta);
+    color: white;
+    display: block;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-details {
+    margin-left: 70px;
+}
+
+.order-details h2 {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group:nth-of-type(1),
+.form-group:nth-of-type(3) {
+    display: flex;
+}
+
+.form-group:nth-of-type(1) div,
+.form-group:nth-of-type(3) div {
+    width: 300px;
+}
+
+.form-group:nth-of-type(1) input,
+.form-group:nth-of-type(3) input {
+    width: 90%;
+}
+
+.form-group:nth-of-type(2) input {
+    width: 95%;
+}
+
+label {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(50% - 2px);
+    padding: 10px;
+    border: 2px solid black;
+
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+}
+
+.radio-container {
+    background-color: #e9e9e969;
+    border: 1px solid #ccc;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.radio-container label {
+    opacity: 0.7;
+
+}
+
+
+
+
+
+.order-details img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 7px;
+
+}
+
+.order-details ul {
+    list-style-type: none;
+}
+
+.order-details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.order-details li div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+}
+
+.order-details ul li span {
+    margin-right: 0;
+    font-size: 1rem;
+}
+
+.curse-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    line-height: 12px;
+    opacity: 0.8;
+}
+
+header {
+    border: none;
+}
+
+header a {
+    vertical-align: center;
+    height: 20px;
+}
+
+nav img {
+    width: 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    align-self: center;
+}
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 700px) {
+    main {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+    }
+
+    section {
+        width: 100%;
+        /* Alterado para 90% para se adaptar a larguras entre 320px e 400px */
+        max-width: 420px;
+        /* Adicionado para limitar a largura máxima a 420px */
+        margin: auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .radio-container {
+        width: 100%;
+    }
+
+    nav {
+        background: transparent;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        /* Reduzido o tamanho da fonte para melhorar a adaptação */
+        margin-top: 20px;
+        /* Ajustado para ficar proporcional */
+        margin-left: 5%;
+        /* Ajustado para ficar proporcional */
+    }
+
+    aside {
+        width: 90%;
+        /* Alterado para 90% para se adaptar a larguras entre 320px e 400px */
+        margin-bottom: 20px;
+        /* Ajustado para ficar proporcional */
+    }
+
+    aside button {
+        height: 30px;
+        /* Reduzido a altura do botão para melhorar a adaptação */
+        font-size: 0.9rem;
+        /* Reduzido o tamanho da fonte para melhorar a adaptação */
+        margin: 15px auto;
+    }
+
+    .total {
+        margin-right: 50%;
+        /* Ajustado para ficar proporcional */
+    }
+
+    aside span:nth-of-type(1) {
+        margin-right: 47%;
+        /* Ajustado para ficar proporcional */
+    }
+
+    aside hr {
+        width: 100%;
+    }
+
+    aside span:nth-of-type(3) {
+        margin-right: 54%;
+        /* Ajustado para ficar proporcional */
+    }
+
+    .order-details li {
+        width: 90%;
+        /* Alterado para 90% para se adaptar a larguras entre 320px e 400px */
+    }
+
+    aside.order-details {
+        margin: auto;
+    }
+
+
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1399px) and (max-width: 1500px) {
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
+
+    main {
+        width: 85%;
+    }
+}

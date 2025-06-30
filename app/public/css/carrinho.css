@@ -1,0 +1,414 @@
+h1 {
+    font-size: 1.4rem;
+    text-align: left;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    color: var(--cta-titles);
+}
+
+main {
+    width: 82%;
+    margin: 40px auto;
+
+}
+
+ion-icon {
+    cursor: pointer;
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+.main-section {
+    display: flex;
+
+    justify-content: space-around;
+    transition: all 0.5s ease;
+    width: 96%;
+    margin: auto;
+    margin: 50px 0;
+
+}
+
+.main-section ul {
+    /* Estilos para a lista de cursos comprados */
+    overflow-y: scroll;
+    width: 600px;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.main-section ul::-webkit-scrollbar {
+    width: 4px; /* Largura da barra de rolagem */
+    height: 5px;
+}
+
+
+.purchased {
+    /* Estilos para cada curso comprado na lista */
+    height: 65px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    display: flex;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.info-purchase {
+    /* Estilos para as informações do curso comprado (nome do curso e autor) */
+    text-align: left;
+    width: 500px;
+    transition: all 0.5s ease;
+}
+
+.info-purchase h2 {
+    /* Estilos para o título do curso */
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+    transition: all 0.5s ease;
+    color: black;
+
+}
+
+.info-purchase h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.info-purchase p {
+    /* Estilos para informações adicionais (autor, por exemplo) */
+    opacity: 0.8;
+    margin-bottom: 3px;
+    transition: all 0.5s ease;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.purchased img {
+    /* Estilos para as imagens dos cursos comprados */
+    width: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.price-and-trash {
+    /* Estilos para o preço do curso e ícone de lixeira */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: black;
+}
+
+.price-and-trash ion-icon {
+    /* Estilos para o ícone de lixeira */
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para a seção de finalização da compra */
+.main-section aside {
+    width: 300px;
+    /* height: 380px; */
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.main-section aside h2 {
+    /* Estilos para o título "Total" */
+    text-align: left;
+    font-size: 1.7rem;
+    color: var(--second-font-hover);
+    font-weight: 700;
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+.main-section aside p {
+    /* Estilos para o valor total */
+    margin-top: -10px;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: left;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+.main-section aside span {
+    /* Estilos para o desconto */
+    font-size: 1.2rem;
+    opacity: 0.8;
+    max-width: 100%;
+    display: block;
+    text-align: left;
+    margin-top: -20px;
+    transition: all 0.5s ease;
+}
+
+.apply {
+    /* Estilos para o botão de aplicar desconto */
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+.hour,
+.module-amount {
+    /* Estilos para informações adicionais (horas, módulos) */
+    margin-top: 5px 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 20px;
+    transition: all 0.5s ease;
+}
+
+.price-course {
+    /* Estilos para o preço do curso */
+    margin-left: 5px;
+}
+
+h3 {
+    color: var(--cta-titles);
+    margin: 17px 0;
+    font-size: 1.3rem;
+}
+
+main aside button {
+    /* Estilos para o botão "Finalizar compra" */
+    width: 100%;
+    cursor: pointer;
+    height: 35px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.401);
+    cursor: not-allowed;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+/* main aside button:hover {
+   
+    border: none;
+    color: white;
+    background-color: var(--cta-hover);
+    transition: background-color 0.6s ease;
+} */
+
+/* Estilos para a seção "Mais cursos para você" */
+.more-curses {
+    display: flex;
+    gap: 10px;
+    transition: all 0.5s ease;
+    display: flex;
+    height: 102px;
+    width: 100%;
+    margin-bottom: 140px;
+
+
+
+}
+
+
+.price,
+.installments {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+
+
+.more-curses-info {
+    margin-left: 5px;
+    text-align: left;
+    padding: 5px;
+}
+
+.more-curses-info>p {
+    font-size: 0.4rem;
+}
+
+.more-curses article {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 1px solid grey;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+.more-curses article h4 {
+    font-size: 0.9rem;
+}
+
+.more-curses img {
+    height: 100%;
+    width: 43%;
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+
+
+.more-curses h4 {
+    font-size: 1rem;
+    line-height: 17px;
+    margin-bottom: 5px;
+
+}
+
+.more-curses ul {
+    height: 83px;
+}
+
+.more-curses article p {
+    font-size: 0.6rem;
+    opacity: 0.8;
+    text-align: left;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+    overflow-y: hidden;
+    overflow: hidden;
+}
+
+
+
+
+.more-curses li {
+    font-size: 0.8rem;
+    text-align: left;
+    display: block;
+    background-color: rgba(128, 128, 128, 0.253);
+    padding: 3px 4px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    width: 100%;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+
+.more-curses article button:hover {
+    border: none;
+    color: white;
+    background-color: var(--button-color);
+    transition: background-color 0.6s ease;
+}
+
+.nextButton,
+.prevButton {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.stars-icon {
+    display: inline-block;
+    color: var(--primary-color);
+    align-self: center;
+    transition: all 0.5s ease;
+}
+
+.close {
+    font-size: 1.7rem;
+}
+
+.classification {
+    display: block;
+    display: inline;
+    transition: all 0.5s ease;
+}
+
+
+
+/* MOBILE */
+
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+
+    main {
+        width: 90%;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    .main-section ul {
+        width: 100%;
+        margin: auto;
+        max-height: 300px;
+        overflow-y: scroll;
+
+    }
+
+    .main-section aside {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+
+
+    }
+
+    .more-curses {
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .more-curses article {
+        height: 110px;
+    }
+
+
+
+
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 1900px) and (max-width: 2100px) {
+
+    ul article {
+        width: 656px;
+    }
+
+    main aside {
+        width: 280px;
+    }
+
+    input[type="search"] {
+        width: 130px;
+    }
+
+    main aside button {
+        width: 180px;
+    }
+
+}
